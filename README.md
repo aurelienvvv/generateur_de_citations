@@ -1,5 +1,5 @@
-# Générateur de citations
+# Générateur d'activités
 
-Générateur de citations créé pour le projet 5 de OpenClassrooms
+Générateur d'activité créé pour le projet 5 de OpenClassrooms
 
 https://aurelienvvv.github.io/generateur_de_citations/
