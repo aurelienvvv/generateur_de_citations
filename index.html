@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur d'activités</title>
+    <script src="src/js/generator.js" defer></script>
+    <script src="src/js/random-img.js" defer></script>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <div class="gif-container-1">
+
+    </div>
+    <div class="flex-container">
+        <section class="section">
+            <h1 class="title">Générateur <span class="bold">d'activités</span></h1>
+            <p class="intro-text">Vous vous ennuyez ? On vous trouve des activités à faire !
+            </p>
+
+            <form class="sentences-options">
+                <div class="inputs-wrappers">
+                    <input type="radio" id="indoor" name="type" value="indoor" required>
+                    <label for="indoor">Chez soi</label><br>
+
+                    <input type="radio" id="outdoor" name="type" value="outdoor">
+                    <label for="outdoor">À l'exterieur</label><br>
+                </div>
+
+                <div class="inputs-wrappers">
+                    <input type="radio" name="number" id="1" value="1" required>
+                    <label for="1">1</label>
+
+                    <input type="radio" name="number" id="2" value="2">
+                    <label for="2">2</label>
+
+                    <input type="radio" name="number" id="3" value="3">
+                    <label for="3">3</label>
+
+                    <input type="radio" name="number" id="4" value="4">
+                    <label for="4">4</label>
+
+                    <input type="radio" name="number" id="5" value="5">
+                    <label for="5">5</label>
+                </div>
+
+                <div class="btn-wrapper">
+                    <button class="btn" type="submit">Générer les activités</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <section class="generated-sentences flex-container">
+        <div class="section">
+            <div class="title">les activités</div>
+            <ul>
+
+            </ul>
+            <p>Que voulez vous faire maintenant ?</p>
+            <div class="btns-wrapper">
+                <button class="reload-btn btn -light" type="button">Je veux recommencer !</button>
+                <button class="quit-btn btn -dark" type="button">Je quitte l'application</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="quit-screen flex-container">
+        <div class="section">
+            <div class="title">à bientôt</div>
+            <img src="src/img/bye.gif" alt="à bientôt">
+            <p>À bientôt pour de nouvelles aventures !</p>
+            <div class="btn-wrapper">
+                <button class="reload-btn btn -dark" type="button">Finalement je veux recommencer</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="error-screen flex-container">
+        <div class="section">
+            <div class="title">ERREUR !</div>
+            <img src="src/img/warning.gif" alt="attention">
+            <p>Il faut séléctionner un type et un nombre d'activités</p>
+            <div class="btn-wrapper">
+                <button class="reload-btn btn -dark" type="button">J'ai compris !</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
